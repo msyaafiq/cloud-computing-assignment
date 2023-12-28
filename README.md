@@ -41,7 +41,7 @@ In normal HTML, if you want to reference a static file like a CSS file, you migh
 <link rel="stylesheet" type="text/css" href="/css/styles.css">
 /```
 
-##**Flask App HTML (with Jinja Template Engine):**
+**Flask App HTML (with Jinja Template Engine):**
 
 In a Flask app with the Jinja template engine, you must use `url_for` to generate URLs dynamically. This is useful, for example, when you want to handle static files through Flask's routing:
 
