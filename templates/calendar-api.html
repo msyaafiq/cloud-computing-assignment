@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>Cloud Computing Assignment</title>
+
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- page icon -->
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='images/f-logo.ico') }}"
+      type="image/x-icon"
+    />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}"
+    />
+    <!-- style css -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/style.css') }}"
+    />
+    <!-- Responsive-->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/responsive.css') }}"
+    />
+
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    </style>
+
+  </head>
+  <!-- body -->
+  <body class="main-layout inner_page">
+    <!-- loader  -->
+    <div class="loader_bg">
+      <div class="loader">
+        <img
+          src="{{ url_for('static', filename = 'images/loading.gif') }}"
+          alt="#"
+        />
+      </div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <div class="header">
+      <div class="container">
+        <div class="row d_flex">
+          <div class="col-md-2 col-sm-3 col logo_section">
+            <div class="full">
+              <div class="center-desk">
+                <div class="logo">
+                  <a href="/">
+                    <img
+                      class="uempower_logo"
+                      src="{{ url_for('static', filename = 'images/Google-Cloud-Symbol.png') }}"
+                      alt="FoodLink Logo"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-12">
+            <nav class="navigation navbar navbar-expand-md navbar-dark">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarsExample04"
+                aria-controls="navbarsExample04"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/place-api">Place API</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/calendar-api">Calendar API</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/youtube-data-api"
+                      >Youtube Data API</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/openweather-api"
+                      >OpenWeather API</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/">Alep's API</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end header inner -->
+
+    <!-- about -->
+    <div class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage text_align_center">
+              <h2>Soqie's<span class="blue_light">    Page</span></h2>
+            </div>
+            <div class="col-md-10 offset-md-1">
+              <div class="domain_bg">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+      </div>
+    </div>
+    <!-- end about -->
+
+    <!--  footer -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="infoma text_align_left">
+                <h3>Group Members</h3>
+                <ul class="commodo">
+                  <li>1. MUHAMMAD SYAFIQ BIN ADIMUN (207093)</li>
+                  <li>2. MUHAMMAD SYAUQIE BIN SYAHROL NIZAR (206066)</li>
+                  <li>3. AZRIEL HAFNY BIN NOOR AZLI (205473)</li>
+                  <li>4. MUHAMMAD ALIF ZAKWAN BIN MOHD AS’AD (206078)</li>
+                  <li>5. AHMAD SHUKRI BIN AZMI (206133)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p>Cloud Computing Group Assignment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/bootstrap.bundle.min.js') }}"></script>
+    <!-- sidebar -->
+    <script src="{{ url_for('static', filename = 'js/custom.js') }}"></script>
+
+  </body>
+</html>
