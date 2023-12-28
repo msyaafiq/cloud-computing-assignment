@@ -14,4 +14,23 @@ Make sure you have the following installed:
 ## Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/flask-app.git
+   git clone https://github.com/msyaafiq/cloud-computing-assignment.git
+
+2. **Navigate to the project directory:**
+   ```bash
+   cd cloud-computing-assignment
+
+3. **Install Flask:**
+   ```bash
+   pip install Flask
+
+4. **Run the Flask App:**
+   ```bash
+   python main.py
+
+4. **Open the browser**
+   Click the link with address:
+   http://127.0.0.1:8000/
+
+
+
