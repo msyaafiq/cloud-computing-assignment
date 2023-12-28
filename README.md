@@ -37,8 +37,9 @@ Make sure you have the following installed:
 ### Normal HTML:
 In normal HTML, if you want to reference a static file like a CSS file, you might use a relative path:
 
-
+```html
 <link rel="stylesheet" type="text/css" href="/css/styles.css">
+/```
 
 ##**Flask App HTML (with Jinja Template Engine):**
 
