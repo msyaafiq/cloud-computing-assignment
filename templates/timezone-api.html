@@ -94,28 +94,40 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarsExample04">
                 <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="/">Home</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link" href="/place-api">Place API</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/calendar-api">Calendar API</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/youtube-data-api"
-                      >Youtube Data API</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/openweather-api"
-                      >OpenWeather API</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/timezone-api">Timezone API</a>
-                  </li>
+                  
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/">
+                        Home
+                      </a>
+                    </li>
+
+                    <li class="nav-item ">
+                      <a class="nav-link" href="/place-api">
+                        Place API
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="/calendar-api">Calendar API</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="/youtube-data-api">
+                        Youtube Data API
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="/openweather-api">
+                        OpenWeather API
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="/timezone-api">
+                        Timezone API
+                      </a>
+                    </li>
                 </ul>
               </div>
             </nav>
@@ -123,12 +135,12 @@
         </div>
       </div>
     </div>
-    <!-- end header inner -->
+  
 
 
 
 
-    <!-- about -->
+   
       <div class="about">
         <div class="container">
               <div class="timezone-main-container">
@@ -156,9 +168,9 @@
       
 
     
-    <!-- end about -->
+  
 
-    <!--  footer -->
+  
     <footer>
       <div class="footer">
         <div class="container">
@@ -190,7 +202,7 @@
     </footer>
 
 
-    <!-- end footer -->
+  
     <!-- Javascript files-->
     <script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename = 'js/bootstrap.bundle.min.js') }}"></script>
@@ -625,12 +637,11 @@
       addOption(document.f1.tz,my_timezones[i],my_timezones[i]);
       }
 
-      function addOption(selectbox,text,value)
-
-      {var optn = document.createElement("OPTION");
-      optn.text = text;
-      optn.value = value;
-      selectbox.options.add(optn);
+      function addOption(selectbox,text,value){
+        var optn = document.createElement("OPTION");
+        optn.text = text;
+        optn.value = value;
+        selectbox.options.add(optn);
       }
 
       function disp_TZ(){
