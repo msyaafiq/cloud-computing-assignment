@@ -159,6 +159,7 @@ li,
 ol {
      margin: 0px;
      padding: 0px;
+     text-align: center;
      list-style: none;
 }
 
