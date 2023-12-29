@@ -41,6 +41,11 @@
       rel="stylesheet"
       href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/index.css') }}"
+    />
     </style>
 
   </head>
@@ -122,22 +127,19 @@
 
     <!-- about -->
     <div class="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="titlepage text_align_center">
-              <h2>Home<span class="blue_light">    Page</span></h2>
-            </div>
-            <div class="col-md-10 offset-md-1">
-              <div class="domain_bg">
-            </div>
+        <div class="container">
+          <div class="home-title-section">
+            Google App <b>Engine</b>
           </div>
-        </div>
 
-      </div>
+          <div class="home-content">
+            <p class="description">Google App Engine (GAE) is a fully managed platform-as-a-service (PaaS) offering from Google Cloud that allows developers to build and deploy applications without managing the underlying infrastructure. It provides a scalable and serverless environment for developing and running web applications, mobile backends, and APIs.</p>
+          </div>
+          
+          
+        </div>
     </div>
-      </div>
-    </div>
+      
     <!-- end about -->
 
     <!--  footer -->
