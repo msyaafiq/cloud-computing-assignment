@@ -42,10 +42,10 @@ def openweather_api():
     return render_template('openweather-api.html')
 
 
-@views.route('/aleps-api')
+@views.route('/timezone-api')
 def aleps_api():
     # Replace 'aleps_api.html' with the actual template file for Alep's API
-    return render_template('aleps-api.html')
+    return render_template('timezone-api.html')
 
 
 app.register_blueprint(views)
