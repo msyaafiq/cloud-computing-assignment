@@ -1,0 +1,26 @@
+.about {
+    background: #fefefd;
+    padding: 60px 0 31px 0;
+}
+
+.home-title-section {
+    font-size: 30px;
+    color: #2e3192;
+    line-height: 40px;
+    font-weight: bold;
+    padding: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+   
+    b {
+        color: #ee4343;
+    }
+}
+
+.home-content {
+    .description {
+        line-height: 2.0;
+    }
+}
+
