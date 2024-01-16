@@ -41,6 +41,51 @@
       rel="stylesheet"
       href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
     />
+
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+      }
+
+      h1 {
+          text-align: center;
+      }
+
+      #searchInput {
+          width: 60%;
+          padding: 10px;
+          margin-right: 10px;
+      }
+
+      #searchContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 20px;
+      }
+
+      #searchResults {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Update this line */
+          gap: 20px;
+          justify-content: center;
+          margin-top: 20px;
+      }
+
+      .resultItem {
+          border: 1px solid #ddd;
+          padding: 10px;
+          text-align: center;
+      }
+
+      iframe {
+          width: 100%;
+          height: 200px;
+          align-self: flex-end; /* Add this line */
+
+      }
+    
     </style>
 
   </head>
@@ -130,6 +175,62 @@
             </div>
             <div class="col-md-10 offset-md-1">
               <div class="domain_bg">
+                <h1>YouTube Video Search</h1>
+
+    <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Enter search query">
+        <button onclick="searchYouTube()"> Search </button>
+    </div>
+
+    <div id="searchResults"></div>
+
+    <script>
+        function searchYouTube() {
+    var apiKey = 'AIzaSyBPJ3uexT4rGfARpZjAHbHEy67BrahqjG4';
+    var query = document.getElementById('searchInput').value;
+    var maxResults = 9; // Number of results to retrieve
+
+    var url = 'https://www.googleapis.com/youtube/v3/search';
+    url += '?part=snippet';
+    url += '&q=' + encodeURIComponent(query);
+    url += '&key=' + apiKey;
+    url += '&maxResults=' + maxResults;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            if (data.items) {
+                displayResults(data.items);
+            } else {
+                console.error('No items found in the API response:', data);
+            }
+        })
+        .catch(error => console.error('Error:', error));
+}
+
+        function displayResults(items) {
+            var resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = '';
+
+            if (items && Array.isArray(items)) {
+                items.forEach(item => {
+                    var videoTitle = item.snippet.title;
+                    var videoId = item.id.videoId;
+
+                    var resultItem = document.createElement('div');
+                    resultItem.className = 'resultItem';
+                    resultItem.innerHTML = `
+                        <h3>${videoTitle}</h3>
+                        <iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+                    `;
+
+                    resultsContainer.appendChild(resultItem);
+                });
+            } else {
+                resultsContainer.innerHTML = 'No results found.';
+            }
+        }
+    </script>
             </div>
           </div>
         </div>
