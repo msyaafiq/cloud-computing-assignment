@@ -24,28 +24,12 @@ def place_api():
     return render_template('place-api.html')
 
 
-@views.route('/calendar-api')
-def calendar_api():
-    # Replace 'calendar_api.html' with the actual template file for the Calendar API
-    return render_template('calendar-api.html')
 
 
 @views.route('/youtube-data-api')
 def youtube_data_api():
     # Replace 'youtube_data_api.html' with the actual template file for the YouTube Data API
     return render_template('youtube-data-api.html')
-
-
-@views.route('/openweather-api')
-def openweather_api():
-    # Replace 'openweather_api.html' with the actual template file for the OpenWeather API
-    return render_template('openweather-api.html')
-
-
-@views.route('/timezone-api')
-def aleps_api():
-    # Replace 'aleps_api.html' with the actual template file for Alep's API
-    return render_template('timezone-api.html')
 
 
 app.register_blueprint(views)
